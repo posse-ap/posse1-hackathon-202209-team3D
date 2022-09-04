@@ -4,6 +4,49 @@
   box-sizing: border-box;
 }
 
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  height: 100vh;
+}
+
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  padding: 0 16px;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  z-index: 100;
+  border-bottom: 5px solid rgb(22, 109, 239);
+}
+
 .mainImage {
   max-width: 1100px;
   width: 100%;
@@ -80,4 +123,8 @@
 .imagelist li:hover {
   opacity: .7;
   transform: scale(1.05);
+}
+
+.mainImage{
+  margin-top: 80px;
 }
