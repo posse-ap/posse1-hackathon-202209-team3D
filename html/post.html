@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Document</title>
+  <title>想いの丈を叫ぶ</title>
   <link rel="stylesheet" href="../css/post.css">
   <script
   src="https://code.jquery.com/jquery-3.6.1.js"
@@ -13,9 +13,20 @@
   crossorigin="anonymous" defer></script>
   <script src="../js/main.js" defer></script>
 </head>
+<nav class="navbar">
+  <a onclick="history.back(); return false;" href="#">
+    <img src="../img/back.png" alt="" class="back">
+  </a>
+  <div class="p-header__logo">
+    <img src="../img/logo.svg" alt="POSSE">
+  </div>
+  <a href="../html/index.html">
+    <img src="../img/home.png" alt="home" class="home">
+  </a>
+</nav>
 <body class="bg-light">
-  <div class="container w-75"> <!-- containerで括ってwidthを75%までに設定 -->
-    <h1 class="text-center text-info my-4">anonymous</h1>
+  <div class="container w-75">
+    <h1 class="text-center text-info my-4">想いの丈を叫ぶ</h1>
       <form id="form" class="mb-4">
         <input type="text" id="input" class="form-control" placeholder="投稿を入力" autocomplete="off">
       </form>
