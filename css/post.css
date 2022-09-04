@@ -39,6 +39,7 @@ img {
   justify-content: space-between;
   background: white;
   z-index: 100;
+  border-bottom: 5px solid rgb(22, 109, 239);
 }
 
 .slide-container{
@@ -59,13 +60,21 @@ img {
 }
 
 .my-4{
+  background-color: rgb(247, 233, 233,0.9);
+  width: 100%;
+}
+
+.shout-header{
   background-image: url(../img/megaphone1.jpg);
   background-size: cover;
   height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media(min-width: 720px){
-  .my-4{
+  .shout-header{
     background-image: url(../img/megaphone2-1.jpg);
     background-size: cover;
   }
