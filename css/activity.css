@@ -33,8 +33,17 @@ img {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: white;
   z-index: 1;
+}
+
+.home{
+  height: 30px;
+}
+
+.back{
+  height: 30px;
 }
 
 .item {
@@ -47,6 +56,15 @@ img {
   margin-bottom: 5rem;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
+}
+
+.section-title{
+  height: 300px;
+  background-image: url(../img/pencil.jpeg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .items-center {

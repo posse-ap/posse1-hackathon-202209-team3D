@@ -33,8 +33,17 @@ img {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background: white;
   z-index: 1;
+}
+
+.home{
+  height: 30px;
+}
+
+.back{
+  height: 30px;
 }
 
 .hero {
@@ -77,6 +86,11 @@ img {
 .img-container {
   position: relative;
   overflow: hidden;
+  border-radius: 20px;
+  transition: box-shadow .5s;
+}
+.img-container:hover{
+  box-shadow: 0 12px 12px gray;
 }
 .bag-btn {
   position: absolute;
