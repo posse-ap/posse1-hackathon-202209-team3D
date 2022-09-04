@@ -1,0 +1,106 @@
+
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  height: 100vh;
+}
+
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  padding: 0 16px;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  z-index: 100;
+  border-bottom: 5px solid rgb(22, 109, 239);
+}
+
+.slide-container{
+  display: flex;
+  justify-content: center;
+}
+
+.home{
+  height: 30px;
+}
+
+.back{
+  height: 30px;
+}
+
+.bg-light{
+  margin-top: 60px;
+}
+
+.my-4{
+  background-color: rgb(247, 233, 233,0.9);
+  width: 100%;
+}
+
+.shout-header{
+  background-image: url(../img/megaphone1.jpg);
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(min-width: 720px){
+  .shout-header{
+    background-image: url(../img/megaphone2-1.jpg);
+    background-size: cover;
+  }
+}
+
+
+.reply-button {
+  display: block;
+  margin: 0 0 0 auto;
+}
+.reply-button:before {
+  font-size: 1rem;
+  content: '返信';
+}
+
+.reply-items {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 0 0 auto;
+}
+
+.submit-button:before {
+  font-size: 1rem;
+  content: '送信';
+}

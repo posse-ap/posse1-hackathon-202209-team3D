@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"
+    />
+    <link rel="stylesheet" href="../css/birthday.css">
+    <script src="https://kit.fontawesome.com/6a92852126.js" crossorigin="anonymous"></script>
+    <script src="../js/birthday.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a onclick="history.back(); return false;" href="#">
+        <img src="../img/back.png" alt="" class="back">
+      </a>
+      <div class="p-header__logo">
+        <img src="../img/logo.svg" alt="POSSE">
+      </div>
+      <a href="../html/index.html">
+        <img src="../img/home.png" alt="home" class="home">
+      </a>
+    </nav>
+      <main>
+        <div class="mainImage">
+          <div id="prevImage" class="prevImage fas fa-chevron-left"></div>
+          <div id="nextImage" class="nextImage fas fa-chevron-right"></div>
+          <img id="mainImage">
+          <div id="currentSlideNumber" class="currentSlideNumber"></div>
+        </div>
+    
+        <ul id="imagelist" class="imagelist"></ul>
+      </main>
+  </body>
+</html>
