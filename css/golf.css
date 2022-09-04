@@ -1,3 +1,5 @@
+
+
 *,
 ::before,
 ::after {
@@ -15,6 +17,7 @@ html {
 body {
   margin: 0;
   font-family: "Noto Sans JP", sans-serif;
+  height: 100vh;
 }
 
 main {
@@ -38,6 +41,11 @@ img {
   z-index: 100;
 }
 
+.slide-container{
+  display: flex;
+  justify-content: center;
+}
+
 .home{
   height: 30px;
 }
@@ -46,12 +54,14 @@ img {
   height: 30px;
 }
 
-.photo-banner {
-  width:		100%;
+.photo-container {
 	margin:		0;
   margin-top: 60px;
   padding:	0;
   position: relative;
+  height: auto;
+  width: 100%;
+  max-width: 1032px;
 }
 
 .slide{
@@ -59,6 +69,7 @@ img {
 }
 
 .slide img{
+  display: block;
   animation  : slideAnime 6s ease infinite;
   position: absolute;
 }
@@ -75,7 +86,7 @@ img {
 }
 
 .photo-img{
-  width:		100%;
+  width: 100%;
 }
 
 .text{
@@ -87,6 +98,42 @@ img {
 	padding:	0;
 	color:		#fff;
 	background:	rgba(69, 216, 243, 0.4); /* 帯の透明度 */
-	position:	absolute; /* 絶対位置指定 */
+	position:	absolute; 
   z-index: 12;
+}
+
+.activity-container{
+  display: block;
+  position: absolute;
+  margin-top: 450px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 480px){
+  .activity-container{
+    margin-top: 400px;
+  }
+}
+
+@media (min-width: 720px){
+  .activity-container{
+    margin-top: 700px;
+  }
+
+}
+
+.activity-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.activity-description{
+  width: 100%;
+  max-width: 1032px;
+}
+
+.headline{
+  font-size: 30px;
 }
