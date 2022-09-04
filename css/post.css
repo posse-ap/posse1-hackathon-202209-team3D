@@ -1,0 +1,23 @@
+.reply-button {
+  display: block;
+  margin: 0 0 0 auto;
+}
+.reply-button:before {
+  font-size: 1rem;
+  content: '返信';
+}
+
+.reply-items {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.submit-button {
+  display: block;
+  margin: 0 0 0 auto;
+}
+
+.submit-button:before {
+  font-size: 1rem;
+  content: '送信';
+}

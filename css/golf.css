@@ -1,0 +1,139 @@
+
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  height: 100vh;
+}
+
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  position: fixed;
+  padding: 0 16px;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  z-index: 100;
+}
+
+.slide-container{
+  display: flex;
+  justify-content: center;
+}
+
+.home{
+  height: 30px;
+}
+
+.back{
+  height: 30px;
+}
+
+.photo-container {
+	margin:		0;
+  margin-top: 60px;
+  padding:	0;
+  position: relative;
+  height: auto;
+  width: 100%;
+  max-width: 1032px;
+}
+
+.slide{
+  position: relative;
+}
+
+.slide img{
+  display: block;
+  animation  : slideAnime 6s ease infinite;
+  position: absolute;
+}
+
+.slide img:nth-of-type(1) { animation-delay: 0s }
+.slide img:nth-of-type(2) { animation-delay: 3s }
+
+@keyframes slideAnime{
+  0% { opacity: 0 }
+  8% { opacity: 1 }
+  50% { opacity: 1 }
+  58% { opacity: 0 }
+  100% { opacity: 0 }
+}
+
+.photo-img{
+  width: 100%;
+}
+
+.text{
+  width:		100%;
+	font-size:	200%;
+	text-align:	center;
+	top: 0%;
+	margin:		0;
+	padding:	0;
+	color:		#fff;
+	background:	rgba(69, 216, 243, 0.4); /* 帯の透明度 */
+	position:	absolute; 
+  z-index: 12;
+}
+
+.activity-container{
+  display: block;
+  position: absolute;
+  margin-top: 450px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 480px){
+  .activity-container{
+    margin-top: 400px;
+  }
+}
+
+@media (min-width: 720px){
+  .activity-container{
+    margin-top: 700px;
+  }
+
+}
+
+.activity-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.activity-description{
+  width: 100%;
+  max-width: 1032px;
+}
+
+.headline{
+  font-size: 30px;
+}
