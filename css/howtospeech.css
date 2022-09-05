@@ -89,60 +89,49 @@ img {
 }
 
 iframe{
-   width: 90%;
-   height: 500px;
-   border: 6px solid #C0C0C0;
-   border-radius: 10px 10px 10px 10px;
-   display: block;
-   margin: 0 auto;
-  }
-
-.text-block{
-  margin: 0 5%;
-}
-
-.flex {
-  display: flex; /*横並び*/
-}
-.flex .image {
-  width: 640px; /*画像サイズ指定*/
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  position: relative;
-}
-.flex .right {
-  margin: 0 0 0 20px;
-  padding: 0;
-}
-.flex .title {
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  font-size: 18px;
-}
-.flex .text-box {
-  margin: 10px 0 0;
-  padding: 0;
-}
-
-/* 画像を天地中央表示 */
-
-.flex .image {
-  overflow: hidden;
-  position: relative;
-}
-.flex .image::before {
-  content: "";
+  width: 90%;
+  height: 500px;
+  border: 6px solid #C0C0C0;  
+  border-radius: 10px 10px 10px 10px;
   display: block;
-  padding-top: 58%;
+  margin: 0 auto;
 }
-.flex .image img {
+
+.article{
+  margin-top: 80px;
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.article-container{
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  max-width: 1032px;
+}
+
+h2{
+  font-size: 30px;
+}
+
+h3{
+  font-size: 25px;
+}
+
+h4{
+  font-size: 20px;
+}
+
+.stepone{
+  padding-bottom: 50px;
+  border-bottom: 2px solid gray;
+}
+
+.steptwo{
+  margin-top: 50px;
+  border-bottom: 2px solid gray;
+  padding-bottom: 50px;
+}
+
+.stepthree{
+  margin-top: 80px;
 }

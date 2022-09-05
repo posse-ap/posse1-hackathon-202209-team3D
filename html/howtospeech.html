@@ -21,41 +21,26 @@
       <img src="../img/home.png" alt="home" class="home">
     </a>
   </nav>
-  <div class="activity-header">
-    <h2 class="activity-title">100秒スピーチ</h2>
-  </div>
-    <div class="activity-container">
-      <div class="activity-description">
-        <div class="text-block">
-          <h1>Slackメッセージ保存</h1>
-          <h2>使用方法</h2>
-          <div class="flex">
-            <figure class="image"><img src="../img/Slack-main-picture.png" alt=""></figure>
-            <div class="right">
-              <p class="title">保存したい投稿を選ぶ</p>
-              <p class="text-box">Slackのワークスペースにてスプレッドシートに移して保存したい投稿を決めます。この時、保存できるものはGAS内において指定されたチャンネルのみとなっており、保存することが出来るのもGASにおいて権限を与えられたユーザーのみとなっています。<br>
-              (※今回のコードはワークスペースの管理者権限が必要なため、"Test"ワークスペースを作成し適用。)</p>
-            </div>
-          </div>
-          <br><br>
-          <div class="flex">
-            <figure class="image"><img src="../img/slack-reaction-test.png" alt=""></figure>
-            <div class="right">
-              <p class="title">リアクションをおす</p>
-              <p class="text-box">保存したい投稿に指定されたリアクションをおします。ここではわかりやすくカスタム絵文字を使用し:test:の絵文字を押すこととしています。ここで押す必要のあるリアクションはGAS内において指定されているため変更することが可能です。</p>
-            </div>
-          </div>
-          <br><br>
-          <div class="flex">
-            <figure class="image"><img src="../img/Slack-sheet-picture.png" alt=""></figure>
-            <div class="right">
-              <p class="title">シート更新</p>
-              <p class="text-box">一時間ごとにGASが実行されシートは一時間おきに自動で更新されます。またGASから直接動かすこともできるため何かあった際にはすぐに動かすことが可能です。</p>
-            </div>
-          </div>
-        </div>
-        <br>
-        <br>
+  <div class="article">
+    <div class="article-container">
+      <h2>Slackメッセージ保存</h2>
+      <h3>使用方法</h3>
+      <div class="stepone">
+        <h4>① 保存したい投稿を選ぶ</h4>
+        <img src="../img/Slack-main-picture.png" alt="">
+        <p>Slackのワークスペースにてスプレッドシートに移して保存したい投稿を決めます。この時、保存できるものはGAS内において指定されたチャンネルのみとなっており、保存することが出来るのもGASにおいて権限を与えられたユーザーのみとなっています。
+          (※今回のコードはワークスペースの管理者権限が必要なため、"Test"ワークスペースを作成し適用。)</p>
+      </div>
+      <div class="steptwo">
+        <h4>② リアクションを押す</h4>
+        <img src="../img/slack-reaction-test.png" alt="">
+        <p>保存したい投稿に指定されたリアクションをおします。ここではわかりやすくカスタム絵文字を使用し:test:の絵文字を押すこととしています。ここで押す必要のあるリアクションはGAS内において指定されているため変更することが可能です。</p>
+      </div>
+      <div class="stepthree">
+        <h4>③ シート更新</h4>
+        <img src="../img/Slack-sheet-picture.png" alt="">
+        <p>保存したい投稿に指定されたリアクションをおします。ここではわかりやすくカスタム絵文字を使用し:test:の絵文字を押すこととしています。ここで押す必要のあるリアクションはGAS内において指定されているため変更することが可能です。</p>
       </div>
     </div>
+  </div>
   </body>
