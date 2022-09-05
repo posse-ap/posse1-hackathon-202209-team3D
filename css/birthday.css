@@ -58,7 +58,11 @@ img {
 }
 
 .birthday_title{
-  font-size: 30px;
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+  background-color: #7ED956;
+  color: white;
 }
 
 .mainImage {
