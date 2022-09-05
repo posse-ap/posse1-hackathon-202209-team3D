@@ -2,7 +2,7 @@ const form = document.getElementById("form");
 const input = document.getElementById("input");
 const ul = document.getElementById("ul");
 
-const todos = JSON.parse(localStorage.getItem("todos"));
+const todos = JSON.parse(localStorage.getItem("golf"));
 if (todos) {
   todos.forEach((todo) => {
     add(todo);
@@ -46,13 +46,13 @@ function saveData() {
     });
   });
 
-  localStorage.setItem("todos", JSON.stringify(todos));
+  localStorage.setItem("golf", JSON.stringify(todos));
 }
 
 //リロード時の挙動
 window.addEventListener("DOMContentLoaded", () => {
   const replyContent = document.getElementById('reply-content');
-  const replyItem = localStorage.getItem('reply');
+  const replyItem = localStorage.getItem('disney-post');
 
   if (replyItem) {
     replyContent.style.display = 'block';
@@ -70,3 +70,9 @@ const replyBtn = document.getElementById('r-button');
 replyBtn.addEventListener('click', () => {
   replyContent.style.display = 'block';
 })
+
+function test() {
+  let reply = document.getElementById('reply').value;
+
+  let replyText = localStorage.setItem("golf-post", reply);
+}
