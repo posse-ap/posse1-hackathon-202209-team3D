@@ -1,0 +1,56 @@
+function myFunction() {
+  var sheet_before = SpreadsheetApp.openById("1EwF9bj6Tv7iftJRu9nr1dreNbRsR-d1p3qWYOV34hFs").getSheetByName("Slack");
+  var sheet_after = SpreadsheetApp.openById("1v7XrFjItCEbE8RXE-uRODzP_tt_6pjEsN3SRuAgNtts").getSheetByName("table");
+
+  var data_list = [];
+  var admin_user = [{id:"U041BSWT6Q1", name:"Hayato Nakamura"},{id:"U040WK3S1UM", name:"Taisei Sekine"}];
+  var before_sheet_LastRow = sheet_before.getLastRow();
+  var after_sheet_LastRow = sheet_after.getLastRow(); 
+
+  for(i = 2; i < before_sheet_LastRow + 1; i++){
+    var sheet_time = sheet_before.getRange(i,1).getValue();
+    var sheet_link = sheet_before.getRange(i,2).getValue();
+    var sheet_id = sheet_before.getRange(i,3).getValue();
+    var sheet_text =sheet_before.getRange(i,4).getValue();
+    var user_name = "";
+
+    for(a = 0; a < admin_user.length; a++){
+      if(admin_user[a].id == sheet_id){
+        user_name = admin_user[a].name;
+        break;
+      }else{
+        user_name = "不明";
+        console.log(a);
+        console.log("検索内容" + admin_user[a].id);
+        console.log("検索対象" + sheet_id);
+      }
+    } 
+
+    data_list.push({Time:sheet_time, Link:sheet_link, Id: user_name, Text:sheet_text});
+  }
+
+
+  const result = data_list.filter((element, index, self) => 
+                              self.findIndex(e => 
+                                            e.Text === element.Text
+                                            ) === index
+                              );
+
+  console.log(data_list);
+  console.log(result);
+  console.log(result.length);
+
+  for(d = 2; d <= after_sheet_LastRow + 1; d++){
+    sheet_after.getRange(d,1).setValue("");
+    sheet_after.getRange(d,2).setValue("");
+    sheet_after.getRange(d,3).setValue("");
+    sheet_after.getRange(d,4).setValue("");
+  }
+
+  for(j = 2; j <= result.length + 1; j++){
+    sheet_after.getRange(j,1).setValue(result[j-2].Time);
+    sheet_after.getRange(j,2).setValue(result[j-2].Link);
+    sheet_after.getRange(j,3).setValue(result[j-2].Id);
+    sheet_after.getRange(j,4).setValue(result[j-2].Text);
+  }
+}
