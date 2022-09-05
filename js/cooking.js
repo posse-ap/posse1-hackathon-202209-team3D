@@ -2,7 +2,7 @@ const form = document.getElementById("form");
 const input = document.getElementById("input");
 const ul = document.getElementById("ul");
 
-const todos = JSON.parse(localStorage.getItem("golf"));
+const todos = JSON.parse(localStorage.getItem("cooking"));
 if (todos) {
   todos.forEach((todo) => {
     add(todo);
@@ -46,13 +46,13 @@ function saveData() {
     });
   });
 
-  localStorage.setItem("golf", JSON.stringify(todos));
+  localStorage.setItem("cooking", JSON.stringify(todos));
 }
 
 //リロード時の挙動
 window.addEventListener("DOMContentLoaded", () => {
   const replyContent = document.getElementById('reply-content');
-  const replyItem = localStorage.getItem('disney-post');
+  const replyItem = localStorage.getItem('cooking-post');
 
   if (replyItem) {
     replyContent.style.display = 'block';
@@ -74,7 +74,7 @@ replyBtn.addEventListener('click', () => {
 function test() {
   let reply = document.getElementById('reply').value;
 
-  let replyText = localStorage.setItem("golf-post", reply);
+  let replyText = localStorage.setItem("cooking-post", reply);
 
   const submitButton = document.getElementById('submit');
   submitButton.addEventListener('click', () => {
