@@ -140,3 +140,21 @@ img {
   color: var(--primaryColor);
   text-align: center;
 }
+
+.shout-description{
+  font-size: 20px;
+  background-color: white;
+  height: 120px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  padding: 3px 16px;
+  border: solid 5px #C565E0;
+}
+
+.shout-paragraph{
+  text-align: center;
+}

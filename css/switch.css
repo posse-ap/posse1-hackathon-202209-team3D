@@ -41,7 +41,7 @@ img {
 }
 
 .activity-header{
-  background-image: url(../img/header_shout.jpg);
+  background-image: url(../img/header_speech.jpg);
   background-size: cover;
   height: 300px;
   display: flex;
@@ -51,7 +51,7 @@ img {
 
 .activity-title{
   font-size: 45px;
-  background-color: #D9AC58;
+  background-color: #45D8F3;
   color: white;
   width: 100%;
   text-align: center;
@@ -91,7 +91,7 @@ img {
 
 .title {
   font-size: 40px;
-  color: #FE5E81;
+  color: #c118d8;
   text-align: center;
   font-weight: bold;
 }
@@ -162,17 +162,46 @@ iframe{
   border-radius: 10px 10px 10px 10px;
 }
 
+.link{
+  margin-top: 20px;
+}
 
-.shout-description{
-  font-size: 20px;
-  background-color: white;
-  height: 120px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+@media(max-width: 480px){
+  .link{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media(min-width: 720px){
+  .link{
+    display: flex;
+  }
+}
+
+.jump-for-slackpost{
+  width: 100%;
+  max-width: 1032px;
+}
+
+.jump-for-webpost{
+  width: 100%;
+  max-width: 1032px;
+}
+
+.choose{
   display: flex;
-  align-items: center;
   justify-content: center;
-  color: black;
-  padding: 3px 16px;
-  border: solid 5px #D9AC58;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.choose-paragraph{
+  width: 230px;
+  background-color: #FF66C4;
+  color: white;
+  text-align: center;
+  height: 50px;
+  border-radius: 20px;
+  padding-top: 10px;
 }
