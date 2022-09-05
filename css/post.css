@@ -42,10 +42,6 @@ img {
   border-bottom: 5px solid rgb(22, 109, 239);
 }
 
-.slide-container{
-  display: flex;
-  justify-content: center;
-}
 
 .home{
   height: 30px;
@@ -65,19 +61,12 @@ img {
 }
 
 .shout-header{
-  background-image: url(../img/megaphone1.jpg);
+  background-image: url(../img/header_shout.jpg);
   background-size: cover;
   height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media(min-width: 720px){
-  .shout-header{
-    background-image: url(../img/megaphone2-1.jpg);
-    background-size: cover;
-  }
 }
 
 
