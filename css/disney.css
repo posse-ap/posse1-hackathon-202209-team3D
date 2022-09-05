@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700');
 
 *,
 ::before,
@@ -28,7 +28,7 @@ img {
   max-width: 100%;
 }
 
-.navbar {
+.p-body .navbar {
   position: fixed;
   padding: 0 16px;
   top: 0;
@@ -44,7 +44,9 @@ img {
 
 .slide-container{
   display: flex;
+  position: relative;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .home{
@@ -116,7 +118,7 @@ img {
 
 @media (min-width: 720px){
   .activity-container{
-    margin-top: 770px;
+    margin-top: 790px;
   }
 
 }
@@ -211,11 +213,6 @@ input[type="checkbox"]:checked + label::after {
   }
 }
 
-.bg-light{
-  /* display: flex; */
-  justify-content: center;
-}
-
 .container {
   display: block;
   max-width: 1072px;
@@ -223,14 +220,18 @@ input[type="checkbox"]:checked + label::after {
 }
 
 .title {
-  font-size: 40px;
-  color: #fe5e81;
   text-align: center;
-  font-weight: bold;
+  padding-top: 5px;
+  border-radius: 20px;
+  color: white;
+  width: 180px;
+  height: 50px;
+  font-size: 30px;
+  background-color:rgba(69, 216, 243, 0.7);
 }
 
 .reply-button {
-  display: none;]
+  display: none;
   border-radius: 2px;
   margin: 10px 0 20px auto;
 }
@@ -251,4 +252,3 @@ input[type="checkbox"]:checked + label::after {
   display: none;
   margin: 0 10rem;
 }
-
