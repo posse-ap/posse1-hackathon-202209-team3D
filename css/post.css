@@ -26,10 +26,24 @@ img {
   max-width: 100%;
 }
 
+.navbar {
+  position: fixed;
+  padding: 0 16px;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  z-index: 100;
+  border-bottom: 5px solid rgb(22, 109, 239);
+}
+
 .container {
   margin: 0;
   max-width: 1072px;
-} 
+}
 
 .title {
   font-size: 40px;
@@ -53,6 +67,15 @@ img {
   height: 60px;
   border-radius: 10px;
   border-color: darkgray;
+}
+
+.shout-header{
+  background-image: url(../img/header_shout.jpg);
+  background-size: cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .test {

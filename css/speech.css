@@ -39,11 +39,26 @@ img {
   justify-content: space-between;
   background: white;
   z-index: 100;
+  border-bottom: 5px solid rgb(22, 109, 239);
 }
 
-.slide-container{
+.activity-header{
+  background-image: url(../img/header_speech.jpg);
+  background-size: cover;
+  height: 300px;
+  margin-top: 60px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.activity-title{
+  font-size: 45px;
+  background-color: rgba(69, 216, 243);
+  color: white;
+  width: 100%;
+  text-align: center;
 }
 
 .home{
@@ -52,41 +67,6 @@ img {
 
 .back{
   height: 30px;
-}
-
-.photo-container {
-	margin:		0;
-  margin-top: 60px;
-  padding:	0;
-  position: relative;
-  height: auto;
-  width: 100%;
-  max-width: 1032px;
-}
-
-.slide{
-  position: relative;
-}
-
-.slide img{
-  display: block;
-  animation  : slideAnime 6s ease infinite;
-  position: absolute;
-}
-
-.slide img:nth-of-type(1) { animation-delay: 0s }
-.slide img:nth-of-type(2) { animation-delay: 3s }
-
-@keyframes slideAnime{
-  0% { opacity: 0 }
-  8% { opacity: 1 }
-  50% { opacity: 1 }
-  58% { opacity: 0 }
-  100% { opacity: 0 }
-}
-
-.photo-img{
-  width: 100%;
 }
 
 .text{
@@ -102,37 +82,7 @@ img {
   z-index: 12;
 }
 
-.activity-container{
-  display: block;
-  position: absolute;
-  margin-top: 450px;
-  margin-bottom: 100px;
-}
 
-@media (max-width: 480px){
-  .activity-container{
-    margin-top: 400px;
-  }
-}
-
-@media (min-width: 720px){
-  .activity-container{
-    margin-top: 700px;
-  }
-
-}
-
-.activity-container{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 0 16px;
-}
-
-.activity-description{
-  width: 100%;
-  max-width: 1032px;
-}
 
 .headline{
   font-size: 30px;
