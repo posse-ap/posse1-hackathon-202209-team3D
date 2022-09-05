@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
 *,
 ::before,
 ::after {
@@ -14,7 +16,8 @@ html {
 
 body {
   margin: 0;
-  font-family: "Noto Sans JP", sans-serif;
+  /* font-family: "Noto Sans JP", sans-serif; */
+  font-family: "Lato", sans-serif;
 }
 
 main {
@@ -50,7 +53,7 @@ img {
 .hero {
   /* 100vhからheader部分の高さ60pxを引いた分 */
   min-height: calc(100vh - 60px);
-  background: url("./img/express.jpeg") center/cover no-repeat;
+  background: url("../img/top_background.png") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -63,25 +66,35 @@ img {
   padding: 2rem;
 }
 
+.banner-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 3rem;
+  color: #333399;
+  font-family: "Lato", sans-serif;
+}
+
 .item {
-  padding: 4rem 0;
+  padding-bottom: 4rem;
 }
 
 .section-title h2 {
   text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
 }
 
 .section-title{
   height: 300px;
-  background-image: url(../img/top_background.png);
+  /* background-image: url(../img/top_background.png); */
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #333399;
 }
 
 .top-title{
@@ -154,4 +167,59 @@ img {
   letter-spacing: var(--mainSpacing);
   color: var(--primaryColor);
   text-align: center;
+}
+
+/* .start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 1032px;
+} */
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.loading.is-active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-animation {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #20a3ea;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-animation.is-active {
+  opacity: 1;
+  visibility: visible;
 }
