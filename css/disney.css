@@ -245,7 +245,6 @@ input[type="checkbox"]:checked + label::after {
 
 .reply-content {
   display: none;
-  margin: 0 10rem;
 }
 
 .l-container {
